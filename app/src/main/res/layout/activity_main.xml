@@ -7,167 +7,416 @@
     android:orientation="vertical"
     android:background="@color/backgroundColor"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+
+    >
+
+   <include
+       layout="@layout/content_main"
+       android:layout_height="220dp"
+       android:layout_width="match_parent"
+       android:layout_marginTop="0dp"
+
+       />
 
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:orientation="horizontal"
        android:gravity="center"
-       android:clipToPadding="false">
+       android:orientation="horizontal"
+       android:layout_marginTop="2dp"
+       >
+
       <android.support.v7.widget.CardView
           android:id="@+id/banking_view"
-          android:layout_width="160dp"
-          android:layout_margin="16dp"
-          android:layout_height="190dp">
+          android:layout_width="120dp"
+          android:layout_height="148dp"
+          android:layout_margin="8dp">
+
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:orientation="vertical"
-             android:gravity="center">
+             android:gravity="center"
+             android:orientation="vertical">
+
             <ImageView
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="@drawable/circlebackgroundgreen"
-                android:src="@drawable/ic_attach_money_black_24dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:src="@drawable/ic_attach_money_black_24dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Banking"
                 android:layout_marginTop="8dp"
-                android:textStyle="bold"/>
+                android:text="Banking"
+                android:textStyle="bold" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/lighGrayLine"
                 android:layout_margin="10dp"
-                />
+                android:background="@color/lighGrayLine" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Check your bank Activities"
+                android:gravity="center"
                 android:padding="8dp"
-                android:gravity="center"/>
+                android:text="Check your bank Activities" />
          </LinearLayout>
       </android.support.v7.widget.CardView>
+
       <android.support.v7.widget.CardView
           android:id="@+id/file_view"
-          android:layout_width="160dp"
-          android:layout_margin="16dp"
-          android:layout_height="190dp">
+          android:layout_width="120dp"
+          android:layout_height="148dp"
+          android:layout_margin="8dp">
+
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:orientation="vertical"
-             android:gravity="center">
+             android:gravity="center"
+             android:orientation="vertical">
+
             <ImageView
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="@drawable/circlebackgroundpurple"
-                android:src="@drawable/ic_attach_file_black_24dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:src="@drawable/ic_attach_file_black_24dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="File"
                 android:layout_marginTop="8dp"
-                android:textStyle="bold"/>
+                android:text="File"
+                android:textStyle="bold" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/lighGrayLine"
                 android:layout_margin="10dp"
-                />
+                android:background="@color/lighGrayLine" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Attach your file here"
+                android:gravity="center"
                 android:padding="8dp"
-                android:gravity="center"/>
+                android:text="Attach your file here" />
          </LinearLayout>
       </android.support.v7.widget.CardView>
 
-   </LinearLayout>
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="horizontal"
-       android:gravity="center"
-       android:clipToPadding="false">
       <android.support.v7.widget.CardView
-          android:id="@+id/point_view"
-          android:layout_width="160dp"
-          android:layout_margin="16dp"
-          android:layout_height="190dp">
+          android:id="@+id/file_viewa"
+          android:layout_width="120dp"
+          android:layout_height="148dp"
+          android:layout_margin="8dp">
+
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:orientation="vertical"
-             android:gravity="center">
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/circlebackgroundpurple"
+                android:padding="10dp"
+                android:src="@drawable/ic_attach_file_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="File"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/lighGrayLine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Attach your file here" />
+         </LinearLayout>
+      </android.support.v7.widget.CardView>
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:clipToPadding="false"
+       android:gravity="center"
+       android:orientation="horizontal">
+
+      <android.support.v7.widget.CardView
+          android:id="@+id/point_view"
+          android:layout_width="120dp"
+          android:layout_height="148dp"
+          android:layout_margin="8dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:orientation="vertical">
+
             <ImageView
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="@drawable/circlebackgroundpink"
-                android:src="@drawable/ic_control_point_black_24dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:src="@drawable/ic_control_point_black_24dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Point"
                 android:layout_marginTop="8dp"
-                android:textStyle="bold"/>
+                android:text="Point"
+                android:textStyle="bold" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/lighGrayLine"
                 android:layout_margin="10dp"
-                />
+                android:background="@color/lighGrayLine" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Check your point in here"
+                android:gravity="center"
                 android:padding="8dp"
-                android:gravity="center"/>
+                android:text="Check your point in here" />
          </LinearLayout>
       </android.support.v7.widget.CardView>
+
       <android.support.v7.widget.CardView
           android:id="@+id/idea_view"
-          android:layout_width="160dp"
-          android:layout_margin="16dp"
-          android:layout_height="190dp">
+          android:layout_width="120dp"
+          android:layout_height="148dp"
+          android:layout_margin="8dp">
+
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:orientation="vertical"
-             android:gravity="center">
+             android:gravity="center"
+             android:orientation="vertical">
+
             <ImageView
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="@drawable/circlebackgroundyellow"
-                android:src="@drawable/ic_lightbulb_outline_black_24dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:src="@drawable/ic_lightbulb_outline_black_24dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Idea"
                 android:layout_marginTop="8dp"
-                android:textStyle="bold"/>
+                android:text="Idea"
+                android:textStyle="bold" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/lighGrayLine"
                 android:layout_margin="10dp"
-                />
+                android:background="@color/lighGrayLine" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Have an idea? Submit in here"
+                android:gravity="center"
                 android:padding="8dp"
-                android:gravity="center"/>
+                android:text="Have an idea? Submit in here" />
+         </LinearLayout>
+      </android.support.v7.widget.CardView>
+
+      <android.support.v7.widget.CardView
+          android:id="@+id/idea_viewa"
+          android:layout_width="120dp"
+          android:layout_height="148dp"
+          android:layout_margin="8dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/circlebackgroundyellow"
+                android:padding="10dp"
+                android:src="@drawable/ic_lightbulb_outline_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Idea"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/lighGrayLine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Have an idea? Submit in here" />
          </LinearLayout>
       </android.support.v7.widget.CardView>
 
    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom"
+       android:gravity="center"
+
+       android:orientation="horizontal">
+
+      <android.support.v7.widget.CardView
+          android:id="@+id/banking_view1"
+          android:layout_width="120dp"
+          android:layout_height="148dp"
+          android:layout_margin="8dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/circlebackgroundgreen"
+                android:padding="10dp"
+                android:src="@drawable/ic_attach_money_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Banking"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/lighGrayLine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Check your bank Activities" />
+         </LinearLayout>
+      </android.support.v7.widget.CardView>
+
+      <android.support.v7.widget.CardView
+          android:id="@+id/file_view18"
+          android:layout_width="120dp"
+          android:layout_height="148dp"
+          android:layout_margin="8dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/circlebackgroundpurple"
+                android:padding="10dp"
+                android:src="@drawable/ic_attach_file_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="File"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/lighGrayLine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Attach your file here" />
+         </LinearLayout>
+      </android.support.v7.widget.CardView>
+
+      <android.support.v7.widget.CardView
+          android:id="@+id/file_view1"
+          android:layout_width="120dp"
+          android:layout_height="148dp"
+          android:layout_margin="8dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/circlebackgroundpurple"
+                android:padding="10dp"
+                android:src="@drawable/ic_attach_file_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="File"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/lighGrayLine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Attach your file here" />
+         </LinearLayout>
+      </android.support.v7.widget.CardView>
+   </LinearLayout>
+
+
+
+
 
 </LinearLayout>
