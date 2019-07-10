@@ -8,7 +8,6 @@
     android:background="@color/backgroundColor"
     android:gravity="center"
     tools:context=".MainActivity"
-
     >
 
     <include
@@ -189,10 +188,6 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"                android:text="menu4"
                 android:textStyle="bold" />
-
-
-
-
          </LinearLayout>
       </android.support.v7.widget.CardView>
 
